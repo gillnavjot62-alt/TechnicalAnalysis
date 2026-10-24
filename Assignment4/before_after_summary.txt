@@ -1,0 +1,52 @@
+BDA400 Assignment 4 - Before/After Verification
+Student: Navjot Singh
+
+BEFORE CLEANING
+Rows: 610 
+Total missing values: 95 
+Exact duplicate rows: 9 
+Duplicate OrderID values: 10 
+    OrderID           Product       Quantity           Price       
+ Min.   :  1.0   Length   :610   Min.   :  -5.00   Min.   :  5.90  
+ 1st Qu.:152.2   N.unique :  4   1st Qu.:   2.50   1st Qu.: 50.09  
+ Median :301.5   N.blank  : 49   Median :  15.00   Median :102.23  
+ Mean   :301.4   Min.nchar:  0   Mean   :  58.93   Mean   :104.90  
+ 3rd Qu.:451.8   Max.nchar: 11   3rd Qu.:  25.00   3rd Qu.:154.76  
+ Max.   :600.0                   Max.   :1000.00   Max.   :300.00  
+                                 NAs    :95                        
+      Customer  
+ Length   :610  
+ N.unique :  8  
+ N.blank  :  0  
+ Min.nchar:  3  
+ Max.nchar:  7  
+                
+                
+
+AFTER CLEANING
+Rows: 354 
+Total missing values: 0 
+Exact duplicate rows: 0 
+Duplicate OrderID values: 0 
+    OrderID           Product       Quantity         Price       
+ Min.   :  1.0   Length   :354   Min.   : 2.00   Min.   :  5.90  
+ 1st Qu.:154.0   N.unique :  4   1st Qu.: 5.00   1st Qu.: 50.27  
+ Median :300.5   N.blank  : 26   Median :15.00   Median :111.55  
+ Mean   :301.1   Min.nchar:  0   Mean   :14.06   Mean   :107.32  
+ 3rd Qu.:447.5   Max.nchar: 11   3rd Qu.:23.75   3rd Qu.:157.06  
+ Max.   :599.0                   Max.   :30.00   Max.   :300.00  
+      Customer  
+ Length   :354  
+ N.unique :  8  
+ N.blank  :  0  
+ Min.nchar:  3  
+ Max.nchar:  7  
+                
+
+Verification checks:
+        no_missing_product        no_missing_quantity 
+                      TRUE                       TRUE 
+       no_exact_duplicates           unique_order_ids 
+                      TRUE                       TRUE 
+         positive_quantity quantity_within_iqr_limits 
+                      TRUE                       TRUE 

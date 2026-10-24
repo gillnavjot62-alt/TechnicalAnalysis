@@ -1,0 +1,13 @@
+BDA400 Assignment 4 - Reflection
+Student: Navjot Singh
+
+IMPORTANT: The assignment instructions say the 100-150 word reflection must be written in your own words and must not be written by AI. Before submitting, replace this note with your own 100-150 word reflection based on what YOU observed when you ran the R script.
+
+Use these questions to write it:
+- Which AI suggestion was most useful when you cleaned the dataset?
+- Did any suggestion need to be changed after you looked at the real column names or output?
+- Which R checks convinced you that the cleaning worked?
+- What did you learn about verifying AI-generated R code?
+- How would you make your prompt more specific next time?
+
+Target length: 100-150 words.

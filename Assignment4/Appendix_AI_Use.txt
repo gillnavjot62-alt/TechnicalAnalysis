@@ -1,0 +1,23 @@
+BDA400 Assignment 4 - Appendix: AI Use
+Student: Navjot Singh
+Date: October 24, 2026
+AI Tool: ChatGPT (GPT-5.6 Sol)
+
+AI Assistance Declaration:
+I used ChatGPT (GPT-5.6 Sol) for data-cleaning ideas, R code drafting, debugging suggestions, comments, and document structure on October 24, 2026. Prompts used are listed below. I verified outputs by running the code in RStudio and reviewing summary(), glimpse(), table(), nrow(), sum(is.na()), duplicated(), and before/after checks. All final calculations are performed directly in R on my computer. I am responsible for the accuracy and originality of this work.
+
+Final prompts used:
+1. Seed prompt:
+I have a sales dataset in R with missing values, duplicated records or IDs, inconsistent text formatting, and possible numeric outliers. What are common data-cleaning steps I should perform using dplyr?
+
+2. Refinement prompt:
+Here is a sample of my sales data. Suggest R code using dplyr to inspect missing Product and Quantity values, standardize Product and Customer text, remove duplicates, and identify unreasonable Quantity outliers using the IQR method. Do not calculate final results for me; the calculations must run in R.
+
+3. Critique/validation prompt:
+Please explain what each line of the suggested R cleaning code does and suggest R checks using nrow(), sum(is.na()), duplicated(), summary(), and table() so I can confirm the cleaning worked correctly.
+
+4. Debugging prompt:
+If my dplyr cleaning pipeline gives an object-not-found or type error, show me how to inspect column names and data types and simplify the mutate/filter chain without calculating the answer outside R.
+
+Key AI response summary:
+The AI suggested inspecting structure and summaries first, removing exact duplicates, standardizing text with trim/case conversion, handling missing values explicitly, detecting Quantity outliers using the 1.5*IQR rule, and verifying the result with before/after counts and sanity checks. I adapted these suggestions to the actual columns in the supplied synthetic dataset.
